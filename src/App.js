@@ -1,4 +1,3 @@
-//Import route and our components
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";

@@ -9,14 +9,14 @@ export default function Stock() {
 
     if (!stock) throw new Error("Stock doesn't exist");
     return (
-      <div>
-        <h1>{stock.name}</h1>
-        <h1>({stock.symbol})</h1>
-        <h1>PRICE: {stock.lastPrice}</h1>
-        <h1>CHANGE: {stock.change}</h1>
-        <h1>HIGH: {stock.high}</h1>
-        <h1>LOW: {stock.low}</h1>
-        <h1>{stock.open}</h1>
+      <div> 
+        <h1>STOCK INFO: </h1>
+        <h2>{stock.name} ({stock.symbol})</h2>
+        <h3>Price: {stock.lastPrice}</h3>
+        <p>Change: {stock.change}</p>
+        <p>High: {stock.high}</p>
+        <p>Low: {stock.low}</p>
+        <p>{stock.open}</p>
       </div>
     );
   } catch (error) {
